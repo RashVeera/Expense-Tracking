@@ -64,4 +64,4 @@ The layout includes the following sections:
 
 ## Example Screenshot
 
-(![Expense Tracker Screenshot](image.png))
+![Expense Tracker Screenshot](image.png)
