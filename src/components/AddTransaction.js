@@ -8,6 +8,8 @@ const AddTransaction = () => {
 
   const onsubmit =(e)=>{
     e.preventDefault()
+    if(Text==='') { alert('Please enter a valid Name'); return};
+    if(Amount===0) { alert('Please enter amount value not equal to 0'); return};
     addTransaction({
       id:Math.floor(Math.random() * 100000000),
       text:Text,
@@ -28,7 +30,7 @@ const AddTransaction = () => {
     <label className='spans'>Amount <br/> (negative-expense, positive - income) </label>
     <input className='label-text' value={Amount} type='number' onChange={(e)=>setAmount(e.target.value)} defaultValue={0}/>
 
-    <button className='addButton'>Add Transaction</button>
+    <button  className='addButton'>Add Transaction</button>
     </form>
     </div>
   )
