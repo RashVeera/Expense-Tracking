@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# Expense Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a single-page web application that helps users track their income and expenses. Built with React and `useContext` for state management, it allows users to add and delete transactions, calculates the balance, and provides a summary of total income and expenses.
 
-## Available Scripts
+Live Demo: [Expense Tracker](https://expensetracker987.netlify.app/)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Real-time Balance Calculation**: Displays the current balance after each transaction.
+- **Income & Expense Summary**: Shows separate totals for income and expenses.
+- **Transaction History**: Lists all transactions with color-coded labels (green for income, red for expenses).
+- **Add Transaction**: Users can add a new transaction by specifying the name and amount (positive for income, negative for expense).
+- **Delete Transaction**: Users can remove any transaction from the history.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Page Layout
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The layout includes the following sections:
 
-### `npm run build`
+1. **Balance Display**:
+   - Shows the current balance calculated from the total income and expenses.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Income and Expense Summary**:
+   - Displays two sections side-by-side with the total income and total expense, color-coded for clarity.
+   
+3. **Transaction History**:
+   - Lists each transaction, showing the name, amount, and color-coded indicator (green for income, red for expense).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. **Add New Transaction**:
+   - Contains input fields for the transaction name and amount.
+   - Users can specify a positive amount for income and a negative amount for expense.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Components
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Balance**: Shows the current balance.
+- **IncomeExpenseSummary**: Displays income and expense totals in a grid layout.
+- **TransactionList**: Renders a list of all transactions with delete functionality.
+- **AddTransactionForm**: Provides input fields for adding new transactions.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Technologies Used
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **React**: For building the user interface.
+- **useContext**: For managing the global state of transactions, balance, income, and expense.
+- **CSS**: For styling and layout adjustments.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## How to Use
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. **View Balance**: The balance is displayed at the top, showing the result of all transactions.
+2. **Add a Transaction**:
+   - Enter a name and amount in the "Add New Transaction" section.
+   - Positive amounts are treated as income, while negative amounts are treated as expenses.
+   - Click "Add Transaction" to add it to the list.
+3. **Delete a Transaction**: 
+   - Each transaction in the history has a delete option to remove it from the list.
 
-### Code Splitting
+## Example Screenshot
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Expense Tracker Screenshot](https://expensetracker987.netlify.app/screenshot.png)
