@@ -1,38 +1,312 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+
+
+.deleteButton{
+  display: inline;
+  background-color: maroon;
+  color: white;
+  border: none;
+  margin-left: -4rem;
+  transition: opacity 0.5s;
+  opacity: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.signs{
+  padding-right: 0.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.inline>ul:hover .deleteButton{
+  opacity: 1;
+  cursor: pointer;
+}
+
+.inline>ul{
+  display: inline;
+  cursor: pointer;
+}
+.spans{
+  font-weight: bold;
+}
+
+.label-text{
+  display: block;
+  margin-top: 0.5rem;
+  padding: 0.3rem 0.7rem;
+  width: 17rem;
+  margin-bottom: 2%;
+}
+
+.addButton{
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.7rem;
+  width: 18.5rem;
+  margin-bottom: 2%;
+  background-color: blueviolet;
+  color: white;
+  border: white solid;
+  box-shadow: inset;
+}
+
+
+
+
+
+.IEcontainer{
+  display: flex;
+  gap: 2rem;
+  border: black gainsboro;
+  box-shadow: inset;
+  width: 70%;
+  padding-left: 2rem;
+  margin-top: 1%;
+  background-color: white;
   }
-}
+  
+  .IEcontainer>div>h4{
+    margin-top:0.4rem;
+  }
+  
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.balance{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: medium;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+
+.income{
+  border-right: #f4f4f4 solid;
+  padding-right: 3rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.transactions{
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: inset;
+  padding: 5px 5px;
+  width: 75%;
+  margin-left: 0px;
+  margin-top:-20px;
+  margin-bottom: 15px;
+}
+
+
+
+.minus{
+  border-right:maroon solid 5px;
+}
+
+.positive{
+  border-right: green solid 5px;
+}
+
+
+.transactionlistbreak{
+  width: 80%;
+  margin-left: 0rem;
+  margin-top: -1rem;
+}
+
+
+.income>p{
+  color: green;
+  font-size: large;
+}
+
+.expense>p{
+  color: red;
+  font-size: large;
+
+}
+
+.balance-amount{
+  font-size: larger;
+  font-weight: bold;
+}
+
+.App{
+  width: 30%;
+  border: black solid;
+  margin-left: 30%;
+  padding-left: 5%;
+  background-color: #f4f4f4;
+  font-size: medium;
+}
+
+
+
+@media only screen and (max-width: 580px) {
+  .App{
+    width: 70%;
+    border: black solid;
+    margin-left: 15%;
+    margin-top: 10%;
+    padding-left: 5%;
+    background-color: #f4f4f4;
+    font-size: medium;
   }
-  to {
-    transform: rotate(360deg);
+  .expense{
+    width: 70%;
   }
 }
+
+@media only screen and (min-width:581px) and  (max-width: 680px) {
+  .App{
+    width: 60%;
+    border: black solid;
+    margin-left: 15%;
+    padding-left: 5%;
+    margin-top:10%;
+    background-color: #f4f4f4;
+    font-size: medium;
+  } 
+  .label-text,.addButton{
+    width: 70%;
+  }
+  .transactionlistbreak{
+    width: 75%;
+  }
+
+  .IEcontainer{
+    width: 65%;
+    gap:1rem
+  }
+  .addButton{
+    width: 75%;
+  }
+}
+
+@media only screen and (min-width:681px) and  (max-width: 891px) {
+  .App{
+    width: 40%;
+    border: black solid;
+    margin-left: 25%;
+    margin-top:5%;
+    padding-left: 5%;
+    background-color: #f4f4f4;
+    font-size: medium;
+  } 
+  .label-text{
+    width: 70%;
+  }
+  .addButton{
+    width: 75%;
+  }
+  .IEcontainer{
+    width: 70%;
+    gap:1rem
+  }
+  .transactionlistbreak{
+    width: 75%;
+  }
+
+  .income{
+    padding-right: 1.5rem;
+  }
+}
+
+
+@media only screen and (min-width:891px) and  (max-width: 1100px) {
+  .App{
+    width: 40%;
+    border: black solid;
+    margin-left: 25%;
+    margin-top:5%;
+    padding-left: 5%;
+    background-color: #f4f4f4;
+    font-size: medium;
+  } 
+  .label-text{
+    width: 70%;
+  }
+  .addButton{
+    width: 75%;
+  }
+  .IEcontainer{
+    width: 60%;
+    gap:1rem
+  }
+  .transactionlistbreak{
+    width: 75%;
+  }
+}
+
+
+@media only screen and (min-width:1100px) and  (max-width: 1300px) {
+  .App{
+    width: 40%;
+    border: black solid;
+    margin-left: 15%;
+    margin-top: 5%;
+    padding-left: 5%;
+    background-color: #f4f4f4;
+    font-size: medium;
+  } 
+  .label-text{
+    width: 70%;
+  }
+  .addButton{
+    width: 75%;
+  }
+  .income{
+    padding-right: 2rem;
+  }
+  .IEcontainer{
+    width:50%
+  }
+  .transactionlistbreak{
+    width: 75%;
+  }
+}
+
+
+@media only screen and (min-width:1300px) and  (max-width: 1501px) {
+  .App{
+    width: 30%;
+    border: black solid;
+    margin-left: 30%;
+    margin-top:5%;
+    padding-left: 5%;
+    background-color: #f4f4f4;
+    font-size: medium;
+  } 
+  .label-text{
+    width: 70%;
+  }
+  .addButton{
+    width: 75%;
+  }
+  .transactionlistbreak{
+    width: 75%;
+  }
+  .income{
+    padding-right: 2rem;
+  }
+  .IEcontainer{
+    width:60%
+  }
+
+}
+
+@media only screen and (min-width: 1501px) {
+  .App{
+    width: 25%;
+    border: black solid;
+    margin-left: 30%;
+    padding-left: 5%;
+    margin-top:2%;
+    background-color: #f4f4f4;
+    font-size: medium;
+
+  }
+}
+
+
+
+
+
