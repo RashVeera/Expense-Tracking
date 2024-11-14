@@ -64,4 +64,4 @@ The layout includes the following sections:
 
 ## Example Screenshot
 
-![Expense Tracker Screenshot](https://expensetracker987.netlify.app/screenshot.png)
+(![Expense Tracker Screenshot](image.png))
